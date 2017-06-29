@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>美发网站</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/person.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+		<!--头部信息-->
+		<div id="home_header">
+			<div class="container">
+				
+				<div class="home_icon">
+					<img src="img/hair_logo.jpg" />
+				</div>
+				<div class="home_nav">
+					<ul>
+					 	<li ><a href="home_page.html">首页</a></li>
+					 	<li ><a href="store.html">商城</a></li>
+					</ul>
+					<div class="hp_person_name">
+						<span id="login_tog" class="glyphicon glyphicon-user"></span>
+					</div>
+					<div class="login_hide">
+						<a href=""><p>退出</p></a>
+					</div>
+				</div>
+				
+				<div class="hp_title">
+					<span>美发E购</span>
+				</div>
+				
+				<div class="hp_content_title">
+					<span>个人中心</span>
+				</div>
+				
+			</div>
+		</div>
+		<!--头部结束-->
+		
+		<div id="per_content" class="container">
+			<div class="per_left">
+				
+				<div id="per_person" class="window_on">
+					<div class="per_color">
+						<div class="per_img">
+							<img src="img/person_per.jpg" class="img-circle"/>
+						</div>
+						<span id="per_btn_img" class="glyphicon glyphicon-edit"></span>
+						<div class="per_name">
+							<span>吃饭、吃饭</span>
+						</div>
+					</div>
+					<ul>
+						<li>个人信息</li>
+						<li>修改密码</li>
+						<li>浏览记录</li>
+						<li>消息</li>
+					</ul>
+				</div>
+				
+			</div>
+			
+			<!--右侧部分-->
+			<div class="per_right">
+				
+				<button id="per_btn" class="btn btn-default">修改</button>
+  			<div class="per_first">
+	  			<h3 id="per_first">基本资料</h3>
+	  			<ul>
+	  				<li><span>姓名</span><p>物工一班</p></li>
+	  				<li><span>性别</span><p>男</p></li>
+	  				<li><span>年龄</span><p>23</p></li>
+	  				<li><span>手机号</span><p>14785236952</p></li>
+	  				<li><span>QQ/微信</span><p>1234567890</p></li>
+	  				<li><span>现居地</span><p>巢湖学院</p></li>
+	  				<li><span>自我介绍</span><p>我是大三的，喜爱交友，个性活泼</p></li>
+	  			</ul>
+	  		</div>
+	  		<div class="per_first_2">
+	  			<h3 id="per_first">基本资料</h3>
+	  			<ul>
+	  				<li><span>姓名</span><input type="text" placeholder="我们需要真实姓名"/></li>
+	  				<li><span>性别</span>
+		  					<input name="man" type="radio" value="man" />&nbsp;男
+							<input name="women" type="radio" value="women" />&nbsp;女
+	  				</li>
+	  				<li><span>年龄</span><input type="number"/></li>
+	  				<li><span>手机号</span><input type="text" placeholder="请输入常用手机号"/></li>
+	  				<li><span>QQ/微信</span><input type="text" placeholder="请输入你常用的联系方式"/></li>
+	  				<li><span>现居地</span>
+  							<select>
+								  	<option value="type">合肥</option>
+								  	<option value="type">南京</option>
+								  	<option value="type">芜湖</option>
+								  	<option value="type">巢湖学院</option>
+							</select>
+	  				</li>
+	  				<li><span>自我介绍</span><textarea placeholder="最好在十五字以内，简洁明了"></textarea></li>
+	  			</ul>
+	  			<button id="per_fir_btn" class="btn btn-default">提交</button>
+	  		</div>
+	  		
+	  		
+	  		<div class="per_second">
+	  			<h3 id="per_second">用户头像</h3>
+	  			<span id="per_btn_h3" class="glyphicon glyphicon-remove"></span>
+	  			<div class="per_img_left">
+	  				<div class="per_img_now">
+	  					<img src="img/person_per.jpg" />
+	  				</div>
+	  				<span>正在使用</span>
+	  			</div>
+	  			<button class="per_second_btn btn btn-default">更换</button>
+	  			<div class="per_img_right">
+	  				<div class="per_img_change">
+	  				</div>
+	  				<form action="input_from" enctype="multipart/form-data" name="input_from"><input 
+	  					type="file" name="input_file" id="input_file" style="display: none;" onchange="document.input_from.input_text.value=this.value"/><input 
+	  					type="button" value="选择图片" class="btn btn-default"onclick="document.input_from.input_file.click()"/><input 
+	  					type="text" name="input_text" id="input_text"/><br>
+						</form>
+	  			</div>
+  			</div>
+  			
+  			
+  			<div class="per_third">
+  				<h3 id="per_third">修改密码</h3>
+  				<div class="per_pas">
+  					<ul>
+  						<li><span>原始密码</span><input type="text" placeholder="输入原来的密码"/></li>
+  						<li><span>修改密码</span><input type="text" placeholder="想要修改的密码"/></li>
+  						<li><span>再次密码</span><input type="text" placeholder="再输入修改的密码"/></li>
+  					</ul>
+  					<button id="per_pas_btn" class="btn btn-default">确定修改</button>
+  				</div>
+  			</div>
+  			
+  			<div class="per_fourth">
+  				<h3 id="per_fourth">浏览记录</h3>
+  				<div class="per_produce">
+  					
+  					<div class="hp_spe_product">
+							<a href="#">
+								<img src="img/hp_1.jpg" />
+								<div class="hp_span_height">
+								<span>韵之堂护发精油 卷发免洗头发精油润发精油发膜专用修护干枯毛躁直发头发护理护发素</span>
+								</div>
+							</a>
+							<div class="hp_price">
+								<div class="hp_now">
+									<i>￥</i>
+									<span>56.6</span>
+								</div>
+								<div class="hp_before">
+									<i>￥</i>
+									<del>78.8</del>
+								</div>
+							</div>
+						</div>
+						
+						<div class="hp_spe_product">
+							<a href="#">
+								<img src="img/hp_1.jpg" />
+								<div class="hp_span_height">
+								<span>韵之堂护发精油 卷发免洗头发精油润发精油发膜专用修护干枯毛躁直发头发护理护发素</span>
+								</div>
+							</a>
+							<div class="hp_price">
+								<div class="hp_now">
+									<i>￥</i>
+									<span>56.6</span>
+								</div>
+								<div class="hp_before">
+									<i>￥</i>
+									<del>78.8</del>
+								</div>
+							</div>
+						</div>
+						
+						<div class="hp_spe_product">
+							<a href="#">
+								<img src="img/hp_1.jpg" />
+								<div class="hp_span_height">
+								<span>韵之堂护发精油 卷发免洗头发精油润发精油发膜专用修护干枯毛躁直发头发护理护发素</span>
+								</div>
+							</a>
+							<div class="hp_price">
+								<div class="hp_now">
+									<i>￥</i>
+									<span>56.6</span>
+								</div>
+								<div class="hp_before">
+									<i>￥</i>
+									<del>78.8</del>
+								</div>
+							</div>
+						</div>
+						
+						<div class="hp_spe_product">
+							<a href="#">
+								<img src="img/hp_1.jpg" />
+								<div class="hp_span_height">
+								<span>韵之堂护发精油 卷发免洗头发精油润发精油发膜专用修护干枯毛躁直发头发护理护发素</span>
+								</div>
+							</a>
+							<div class="hp_price">
+								<div class="hp_now">
+									<i>￥</i>
+									<span>56.6</span>
+								</div>
+								<div class="hp_before">
+									<i>￥</i>
+									<del>78.8</del>
+								</div>
+							</div>
+						</div>
+						
+						
+						
+  				</div>
+  			</div>
+  			
+  			<div class="per_fifth">
+  				<h3 id="per_fifth">消息中心</h3>
+  				
+  				<span>暂无消息提醒</span>
+  			</div>
+			
+			</div>
+		</div>
+		
+		
+		
+		
+		<footer class="tail">
+  		
+  	</footer>
+		
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.1.1.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/person.js"></script>
+  </body>
+</html>
